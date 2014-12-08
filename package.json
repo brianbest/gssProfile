@@ -1,7 +1,9 @@
 {
   "name": "gssprofile",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.9.5"
+  },
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-sass": "~0.7.3",

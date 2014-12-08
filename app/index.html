@@ -7,10 +7,19 @@
   <title>gssProfile</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+
+  <script>
+    GSS_CONFIG = {
+      verticalScroll: false,
+      worker: "bower_components/gss/dist/worker.js"
+    }
+  </script>
+  <script src="bower_components/gss/dist/gss.js"></script>
+  <link rel="stylesheet" type="text/gss" href="main.gss"></link>
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
   <!-- build:css styles/main.css -->
-  <link rel="stylesheet" href="styles/main.css">
+  <!--<link rel="stylesheet" href="styles/main.css">-->
   <!-- endbuild-->
 
   <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
@@ -21,11 +30,12 @@
 
 <body unresolved>
 
-  <div class="hero-unit">
-    <yo-greeting></yo-greeting>
-    <p>You now have</p>
-    <yo-list></yo-list>
-  </div>
+  <div id="wrap"></div>
+  <div class="contain"></div>
+  <button id="one">one</button>
+  <button id="two">two</button>
+  <button id="three">three</button>
+  <button id="four">four</button>
 
   <!-- build:js scripts/app.js -->
   <script src="scripts/app.js"></script>
